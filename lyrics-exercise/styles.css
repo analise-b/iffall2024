@@ -40,3 +40,15 @@ main{
 #chorus3{
     line-height: 5px;
 }
+.verseTitle{
+    color:midnightblue;
+}
+.pre-chorusTitle{
+    color:firebrick;
+}
+.chorusTitle{
+    color:purple;
+}
+.bridgeTitle{
+    color:lightseagreen;
+}
