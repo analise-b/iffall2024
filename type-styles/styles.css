@@ -1,0 +1,148 @@
+html {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+
+#fontWeightLight {
+    font-weight: lighter;
+}
+
+#fontWeightBold {
+    font-weight: bold;
+}
+
+#fontWeightBolder {
+    font-weight: bolder;
+}
+
+h2,
+h3 {
+    color:gray;
+}
+
+.title {
+    text-indent: 1em;
+}
+
+p {
+    text-indent: 3em;
+}
+
+#fontStyleNormal {
+    font-style: normal;
+}
+
+#fontStyleItalic {
+    font-style: italic;
+}
+
+#fontStyleOblique {
+    font-style: oblique;
+}
+
+#letterSpacingNormal {
+    letter-spacing: normal;
+}
+
+#letterSpacing2 {
+    letter-spacing: .2em;
+}
+
+#letterSpacing4 {
+    letter-spacing: .4em;
+}
+
+#letterSpacing-2 {
+    letter-spacing: -.2em;
+}
+
+#textTransformNormal {
+    text-transform: none;
+}
+
+#textTransformCapitalise {
+    text-transform: capitalize;
+}
+
+#textTransformUppercase {
+    text-transform: uppercase;
+}
+
+#textTransformLowercase {
+    text-transform: lowercase;
+}
+
+#textDecorationNone {
+    text-decoration: none;
+}
+
+#textDecorationUnderline {
+    text-decoration: underline;
+}
+
+#textDecorationUnderlineWavy {
+    text-decoration: underline wavy;
+}
+
+#textDecorationOverline {
+    text-decoration: overline;
+}
+
+#textDecorationOverlineDotted {
+    text-decoration: overline dotted;
+}
+
+#textDecorationLinethrough {
+    text-decoration: line-through;
+}
+
+#textDecorationLinethroughBlue {
+    text-decoration: line-through cornflowerblue;
+}
+
+#fontWeight {
+    background-color: #ffac81;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+#fontStyle {
+    background-color: #ff928b;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+#letterSpacing {
+    background-color: #fec3a6;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}   
+
+#textTransform {
+    background-color: #efe9ae;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+#textDecoration {
+    background-color: #cdeac0;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+#headerSection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   line-height: 2px;
+}
