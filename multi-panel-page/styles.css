@@ -1,0 +1,206 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0 0 16px 0;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding-top: 166px;
+    padding-bottom: 188px;
+    background-image: url('img/snoopy-fall.gif');
+    background-size: cover;
+    background-position: 70% 70%;
+    color: black;
+}
+
+section {
+    margin: 0 auto;
+}
+
+section>div {
+    width: 960px;
+    margin: auto;
+    padding-top: 48px;
+}
+
+.floated-photo {
+    padding-bottom: 60px;
+    background-color: #809bce;
+}
+
+#floatingImage {
+    float: right;
+    width: 400px;
+    height: 300px;
+    margin-left: 43px;
+    margin-bottom: 20px;
+    margin-top: 39px;
+    background-image: url('img/snoopyFloated.webp');
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 1px solid white;
+}
+
+
+.floated-photo p {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+.floated-photo p:first-of-type {
+    margin-top: 39px;
+    line-height: 25px;
+}
+
+.floated-photo p:nth-of-type(2) {
+    margin-top: 18px;
+    line-height: 25px;
+}
+
+.floated-photo p:nth-of-type(3) {
+    margin-top: 17px;
+    line-height: 25px;
+}
+
+.thumbnail-grid {
+    background-color: #95b8d1;
+    min-height: 685px;
+}
+
+.thumbnail-grid h3 {
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 150px;
+    margin: 0;
+}
+
+#i1 {
+    background-image: url('img/snoopy2.jpg');
+    background-size: cover;
+    background-position: 60% 10%;
+}
+
+#i2 {
+    background-image: url('img/snoopy3.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+#i3 {
+    background-image: url('img/snoopy4a.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#i4 {
+    background-image: url('img/snoopy5a.jpg');
+    background-size: cover;
+}
+
+#i5 {
+    background-image: url('img/snoopy6.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#i6 {
+    background-image: url('img/snoopy7.jpg');
+    background-size: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 1px;
+    text-align: left;
+    line-height: 25px;
+    width: 230px;
+}
+
+.description h4 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.description p {
+    margin-top: 8.5px;
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.lastSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #b8e0d2;
+    min-height: 406px;
+}
+
+.lastSection h3 {
+    margin-top: 47px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#lastContent {
+    text-align: center;
+    width: 710px;
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 0px;
+    background-color: #d6eadf;
+    min-height: 120px;
+    width: 100%;
+}
+
+#copyright {
+    font-size: 18px;
+    padding-top: 23px;
+    padding-left: 279px;
+}
