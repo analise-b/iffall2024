@@ -1,5 +1,5 @@
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: rgb(255, 253, 208);
 }
 
@@ -17,6 +17,10 @@ ol {
     font-size: 2.25rem;
 }
 
+#introTitle:hover {
+    font-size: 3rem;
+}
+
 .titleLabel {
     color: #542609;
 }
@@ -27,14 +31,15 @@ ol {
 
 #tag {
     font-size: 1.5rem;
-    width: 25%;
+    width: 100%;
     margin: auto;
     border-radius: 10px;
+    text-align: center;
 }
 
 html h1 {
     font-size: 2.5rem;
-    font-family: 'pacifio', cursive;
+    font-family: "Croissant One", serif;
     width: 50%;
     margin: auto;
     border-radius: 10px;
@@ -42,7 +47,7 @@ html h1 {
 
 html h2 {
     font-size: 2rem;
-    font-family: 'pacifio', cursive;
+    font-family: "Croissant One", serif;
     text-align: left;
 }
 
@@ -217,41 +222,27 @@ footer {
     line-height: normal;
 }
 
+
 @media (max-width:800px) {
-
-    #steps4Image {
-        display: block;
-        width: 90%;
-        margin: 5% auto;
-
-    }
-
-    #stepsResponsive {
-       margin: 2%;
-    }
-
-    #finalImage2 {
-        width: 90%;
-        margin: auto;
-    }
-
-    
-    #header {
-        text-align: center;
-        padding-top: 166px;
-        padding-bottom: 188px;
-        background-image: url('img/header.jpg');
-        background-size: cover;
-        background-position: center;
-        color: #542609;
-    }
-}
-
-@media (max-width:600px) {
 
     #coolingImage,
     #ingredientsImage {
         display: none;
+    }
+
+    #introTitle,
+    #introTitle:hover {
+        font-size: 2rem;
+    }
+
+    #tag,
+    #tag:hover {
+        font-size: 1.25rem;
+    }
+
+    .titleLabel,
+    .titleLabel:hover {
+        font-size: 1.5rem;
     }
 
     #header {
@@ -300,7 +291,7 @@ footer {
     #steps4Image {
         display: block;
         width: 90%;
-        margin: auto;
+        margin: 5% auto;
     }
 
     #finalImage2 {
