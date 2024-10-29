@@ -1,0 +1,273 @@
+a#btn_explodingKittens {
+    display: inline-block;
+    background-color: #e0563a;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+}
+
+a#btn_explodingKittens:hover {
+    display: inline-block;
+    background-color: #be2119;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+    animation: explode;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fa-cat {
+    color: black;
+    padding-left: 5px;
+}
+
+a#btn_explodingKittens:hover .fa-cat {
+    animation: explode;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes explode {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    75% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+a#btn_colourRun {
+    display: inline-block;
+    background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #ff5c5c 87%);
+    color: #cb60b3;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+    transition: all .5s;
+}
+
+a#btn_colourRun:hover {
+    background: linear-gradient(to bottom, #cb60b3 30%, #db36a4 80%);
+    color: #fe9090;
+    transition: all 1s;
+}
+
+.fa-diamond {
+    color: #f1c40f;
+    transform: scale(.65);
+}
+
+a#btn_cartoonNetwork {
+    display: inline-block;
+    color: rgb(0, 43, 231);
+    border: 2px solid rgba(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a#btn_cartoonNetwork:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    transition: all 1s;
+}
+
+.firstLetter {
+    font-size: 32px;
+}
+
+a#btn_cartoonNetwork:hover .firstLetter {
+    color: white;
+    font-size: 48px;
+    transition: all 1s;
+}
+
+a#btn_harryPotter {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin: 50px 50px;
+    margin-top: 100px;
+    color: #242633;
+}
+
+a#btn_harryPotter .fa-hat-wizard {
+    display: none;
+}
+
+a#btn_harryPotter:hover {
+    transform: scale(3);
+    transition: all 2s;
+}
+
+a#btn_harryPotter:hover .fa-hat-wizard {
+    display: block;
+    transition: all 2s;
+}
+
+a#btn_bissinger {
+    display: inline-block;
+    background-color: #c09620;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Eagle Lake", serif;
+}
+
+a#btn_bissinger:hover {
+    background-color: #a07b1c;
+    text-transform: uppercase;
+}
+
+a#btn_lyft .fa-lyft {
+    display: inline-block;
+    color: rgb(255, 0, 191);
+    margin-top: 120px;
+    transform: scale(5);
+}
+
+a#btn_lyft:hover .fa-lyft {
+    color: black;
+    margin-top: 90px;
+    transition: all 3s;
+}
+
+a#btn_botanical {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #000000;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 85px;
+    font-family: "Eagle Lake", serif;
+}
+
+a#btn_botanical #botanicalLettering {
+    display: none;
+}
+
+a#btn_botanical:hover #botanicalLettering {
+    display: block;
+    transition: all 2s;
+    width: 200%;
+    font-size: 10px;
+    padding-top: 50px;
+    margin-left: -30px;
+}
+
+.fa-leaf {
+    color: #006B36;
+    padding-top: 21px;
+    transform: scale(2);
+}
+
+a#btn_botanical:hover {
+    background-color: #006B36;
+    transition: all 2s;
+}
+
+a#btn_botanical:hover .fa-leaf {
+    color: #f1f1f1;
+    transition: all 2s;
+    transform: scale(2) scaleX(-1);
+}
+
+a#btn_foreFlight {
+    display: inline-block;
+    color: #2c97de;
+    transform: scale(2);
+    margin-top: 120px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+a#btn_foreFlight .fa-plane {
+    padding-right: 2px;
+}
+
+a#btn_foreFlight:hover {
+    color: #3f3f46;
+    transform: scale(4) rotate(-40deg);
+    transition: all 2s;
+}
+
+a#btn_facebook {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 120px;
+    transform: scale(6);
+    color: #1877F2;
+}
+
+a#btn_facebook:hover {
+    transform: scale(8) scaleY(-1);
+    transition: all 2s;
+}
+
+a#btn_michaelKors {
+    text-decoration: none;
+    font-family: "Marcellus", serif;
+    color: #000000;
+    margin-top: 120px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+a#btn_michaelKors:hover {
+    color: #E7D2AC;
+    background-color: #000000;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 1s;
+}
