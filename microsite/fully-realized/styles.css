@@ -6,18 +6,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 100%;
     background-image: linear-gradient(to bottom, #001C4C, #000000);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 .pHome {
     font-family: "Montserrat", sans-serif;
     color: #D3D3D3;
     font-size: 1.5rem;
     text-align: center;
-    margin: auto;
+    margin: 2% auto;
     width: 60%;
 }
 
@@ -107,11 +108,12 @@ a {
 }
 
 footer {
+    position: absolute;
     background-image: linear-gradient(to right, #44000C, #23050F, #081640);
     width: 100%;
     height: 300px;
     padding: 0;
-    margin: 5% 0;
+    margin: 0;
     border-top: 5px solid #000000;
 }
 
@@ -660,6 +662,7 @@ footer h1 {
     color: #85000A;
     margin-bottom: 0;
     letter-spacing: 2px;
+    padding-bottom: 2%;
 }
 
 .castFlex {
