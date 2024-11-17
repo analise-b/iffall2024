@@ -1,16 +1,17 @@
 /****************************************** GENERAL ******************************************/
-html,
-body {
+html {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to bottom, #001C4C, #000000);
-    background-size: 100% 100vh;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body covers the viewport height initially */
+    background-image: linear-gradient(to bottom, #001C4C, #000000);
+    background-size: 100% 100%; /* Full coverage for taller pages */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Makes gradient consistent on desktop */
+}
 .pHome {
     font-family: "Montserrat", sans-serif;
     color: #D3D3D3;
@@ -211,6 +212,13 @@ footer h1 {
         width: 100%;
         margin: 8% auto;
         line-height: 2;
+    }
+}
+
+@media (max-width: 768px) { /* Adjusts for smaller screens */
+    body {
+        background-attachment: scroll; /* Fix mobile scrolling issues */
+        background-size: auto 100%; /* Adjusts gradient scaling */
     }
 }
 
