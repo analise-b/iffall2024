@@ -872,6 +872,10 @@ li img {
         object-fit: cover;
     }
 
+    #pavitrFlip:active {
+        background-image: url("img/indiaImage.png");
+    }
+
 }
 
 /****************************************** PRODUCTION PAGE ******************************************/
@@ -1036,6 +1040,7 @@ li img {
     
     .pText {
         height: 300px;
+        visibility: visible;
     }
     
     #developmentImage {
@@ -1051,10 +1056,12 @@ li img {
     }
     .pProductionT {
         font-size: .75rem;
+        visibility: visible;
     }
 
     .pProduction {
         font-size: .75rem;
+        visibility: visible;
     }
 
     .spotifyEmbed {
@@ -1079,6 +1086,7 @@ li img {
     
     .pText {
         height: 200px;
+        visibility: visible;
     }
     
     #developmentImage {
@@ -1094,11 +1102,13 @@ li img {
     }
     .pProductionT {
         font-size: .5rem;
+        visibility: visible;
     }
 
     .pProduction {
         font-size: .75rem;
         width: 80%;
+        visibility: visible;
     }
 
     .spotifyEmbed {
