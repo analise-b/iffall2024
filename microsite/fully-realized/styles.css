@@ -184,19 +184,19 @@ footer h1 {
 
     footer h1,
     header h1 {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     footer p {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     header h1:hover {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     footer {
-        height: 200px;
+        height: 100px;
     }
 
     footer p {
@@ -212,7 +212,7 @@ footer h1 {
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        margin: 8% auto;
+        margin: 2% auto;
         line-height: 2;
     }
 }
@@ -237,6 +237,10 @@ footer h1 {
 
     header h1:hover {
         font-size: .5rem;
+    }
+
+    footer{
+        height: 100px;
     }
 
 }
@@ -509,10 +513,7 @@ footer h1 {
         color: #F1BB2B;
         margin-bottom: 0;
         letter-spacing: 2px;
-    }
-
-    .pageTitle {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .plotFlex {
@@ -586,9 +587,6 @@ footer h1 {
         color: #F1BB2B;
         margin-bottom: 0;
         letter-spacing: 2px;
-    }
-
-    .pageTitle {
         font-size: 2rem;
     }
 
@@ -841,7 +839,7 @@ li img {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80%;
         margin: 0;
         align-items: flex-end;
