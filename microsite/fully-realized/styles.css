@@ -17,7 +17,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #D3D3D3;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     margin: 2% auto;
     width: 60%;
 }
@@ -671,6 +671,7 @@ footer h1 {
     width: 80%;
     margin: auto;
     align-items: flex-end;
+    text-align: center;
 }
 
 li {
@@ -684,6 +685,7 @@ li {
     color: #D3D3D3;
     margin: 5% 0;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 li img {
@@ -703,6 +705,7 @@ li img {
 .characterName {
     font-family: "Sedgwick Ave Display", cursive;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .name {
@@ -712,7 +715,7 @@ li img {
         radial-gradient(circle, black 20%, transparent 21%) 5px 5px / 10px 10px;
     background-color: #85000A;
     width: 75%;
-    height: 125px;
+    height: 120px;
     z-index: 1;
 }
 
@@ -720,6 +723,7 @@ li img {
     margin-top: 3%;
     line-height: 150%;
     font-weight: bold;
+    text-align: center;
 }
 
 .flip {
@@ -1140,7 +1144,9 @@ li img {
     text-align: left;
     margin: 2% auto;
     width: 85%;
-    padding-right: 95px;
+    padding: 20px;
+    padding-right: 90px;
+    z-index: 1;
 }
 
 .pAnimationBox2 {
@@ -1150,7 +1156,7 @@ li img {
     text-align: left;
     margin: 2% auto;
     width: 85%;
-    padding-left: 95px;
+    padding-left: 5%;
 }
 
 #animationFlex {
@@ -1163,10 +1169,15 @@ li img {
 
 .animationBoxFlex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: auto;
 }
 
 .animationBox {
@@ -1190,6 +1201,7 @@ li img {
     position: relative;
     z-index: 1;
     padding-right: 10px;
+    height: auto;
 }
 
 #milesAnimationBox {
@@ -1201,10 +1213,11 @@ li img {
 }
 
 .animationCharacterImages {
-    background-size: cover;
+    background-size: contain;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     width: 25%;
-    height: 400px;
+    height: auto;
     margin: 5% auto;
     position: absolute;
     z-index: 2;
@@ -1212,8 +1225,34 @@ li img {
 
 #milesAnimationImage {
     background-image: url("img/milesAnimationImage.png");
-    right: 8%;
-    bottom: -30%;
+    width: 40%;
+    height: 600px;
+    margin-left: 65%;
+    margin-top: 20%;
+}
+
+#gwenAnimationImage {
+    background-image: url("img/gwenAnimationImage.png");
+    width: 25%;
+    height: 400px;
+    margin-left: -5%;
+    margin-top: 20%;
+}
+
+#pavitrAnimationImage {
+    background-image: url("img/pavitrAnimationImage.png");
+    width: 60%;
+    height: 600px;
+    margin-left: 57%;
+    margin-top: 15%;
+}
+
+#miguelAnimationImage {
+    background-image: url("img/miguelAnimation.png");
+    width: 40%;
+    height: 400px;
+    margin-left: -13%;
+    margin-top: 20%;
 }
 
 #animationEarthsImage {
@@ -1228,11 +1267,6 @@ li img {
     border-radius: 10px;
     margin: 5% auto;
     background-repeat: no-repeat;
-}
-
-#gwenAnimationImage {
-    background-image: url("img/gwenAnimationImage.png");
-    left: 5%;
 }
 
 .gwenAnimationMainImagesFlex {
@@ -1278,13 +1312,6 @@ li img {
     width: 80%;
 }
 
-#pavitrAnimationImage {
-    background-image: url("img/pavitrAnimationImage.png");
-    height: 600px;
-    right: 8%;
-    bottom: -425%;
-}
-
 #mumbattanAnimationBox {
     background-color: #D40919;
     width: 90%;
@@ -1303,13 +1330,6 @@ li img {
 #animationSpiderPavitrImage {
     background-image: url("img/spiderPavitr.avif");
     width: 100%;
-}
-
-#miguelAnimationImage {
-    background-image: url("img/miguelAnimation.png");
-    left: 5%;
-    height: 350px;
-    bottom: -610%;
 }
 
 #miguelAnimationBox {
@@ -1503,6 +1523,7 @@ li img {
         background-image: url("img/animationFinalImage.jpg");
         width: 100%;
         background-attachment: local;
+        background-position: 50% 20%;
     }
 
     #miguelAnimationBox {
