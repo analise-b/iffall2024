@@ -1463,7 +1463,7 @@ li img {
 
     .animationGwenBodyImage {
         width: 80%;
-        height: 100px;
+        height: 200px;
         background-size: cover;
         background-position: 50% 50%;
         border-radius: 10px;
@@ -1481,6 +1481,22 @@ li img {
         background-image: url("img/animationLibrarian.jpg");
         width: 100%;
         height: 200px;
+    }
+
+    #animationMarvel2099Image {
+        display: none;
+    }
+
+    #animationOscarArchImage {
+        background-image: url("img/oscarArch.jpg");
+        width: 100%;
+        height: 100px;
+    }
+    
+    #animationSydMeadImage {
+        background-image: url("img/sydMead.jpg");
+        width: 100%;
+        height: 100px;
     }
     
     #animationFinalImage {
