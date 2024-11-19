@@ -1,6 +1,7 @@
 /****************************************** GENERAL ******************************************/
 html {
     min-height: 100%;
+    cursor:url(img/cobweb.png), auto;
 }
 
 body {
@@ -863,6 +864,7 @@ li img {
         color: #D3D3D3;
         margin: 0;
         font-family: "Montserrat", sans-serif;
+        padding-bottom: 10%;
     }
 
     li img {
@@ -1381,7 +1383,7 @@ li img {
 
 #legoAnimationImage {
     background-image: url("img/legoAnimation.png");
-    width: 23%;
+    width: 20%;
     height: 400px;
     margin-left: -2%;
     margin-top: 18%;
@@ -1648,7 +1650,34 @@ li img {
         width: 90%;
         padding-right: 10px;
     }
+    #spiderPunkAnimationImage2 {
+        background-image: url("img/spiderPunkAnimation2.png");
+        width: 30%;
+        height: 500px;
+        margin-left: 55%;
+        margin-top: 45%;
+    }
     
+}
+
+@media screen and (max-width: 700px) {
+    #spiderPunkAnimationImage2 {
+        background-image: url("img/spiderPunkAnimation2.png");
+        width: 30%;
+        height: 500px;
+        margin-left: 55%;
+        margin-top: 57%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #spiderPunkAnimationImage2 {
+        background-image: url("img/spiderPunkAnimation2.png");
+        width: 30%;
+        height: 500px;
+        margin-left: 50%;
+        margin-top: 75%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1711,5 +1740,28 @@ li img {
         width: 90%;
         padding-right: 10px;
     }
+    #spiderPunkAnimationImage2 {
+        background-image: url("img/spiderPunkAnimation2.png");
+        width: 30%;
+        height: 500px;
+        margin-left: 50%;
+        margin-top: 45%;
+    }
+    #legoAnimationImage {
+        background-image: url("img/legoAnimation.png");
+        width: 20%;
+        height: 400px;
+        margin-left: -2%;
+        margin-top: 18%;
+    }
     
+}
+@media screen and (max-width: 450px) {
+    #spiderPunkAnimationImage2 {
+        background-image: url("img/spiderPunkAnimation2.png");
+        width: 30%;
+        height: 500px;
+        margin-left: 50%;
+        margin-top: 58%;
+    }
 }
