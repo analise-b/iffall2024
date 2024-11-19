@@ -1,7 +1,7 @@
 /****************************************** GENERAL ******************************************/
 html {
     min-height: 100%;
-    cursor:url(img/cobweb.png), auto;
+    cursor: url(img/cobweb.png), auto;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
     background-attachment: fixed;
     position: relative;
 }
+
 .pHome {
     font-family: "Montserrat", sans-serif;
     color: #D3D3D3;
@@ -218,10 +219,14 @@ footer h1 {
     }
 }
 
-@media (max-width: 768px) { /* Adjusts for smaller screens */
+@media (max-width: 768px) {
+
+    /* Adjusts for smaller screens */
     body {
-        background-attachment: scroll; /* Fix mobile scrolling issues */
-        background-size: auto 100%; /* Adjusts gradient scaling */
+        background-attachment: scroll;
+        /* Fix mobile scrolling issues */
+        background-size: auto 100%;
+        /* Adjusts gradient scaling */
     }
 }
 
@@ -240,7 +245,7 @@ footer h1 {
         font-size: .5rem;
     }
 
-    footer{
+    footer {
         height: 100px;
     }
 
@@ -270,7 +275,7 @@ footer h1 {
 }
 
 #homeTitle {
-    color: #85000A;
+    color: #F701BB;
     letter-spacing: 2px;
 }
 
@@ -891,86 +896,87 @@ li img {
         display: none;
     }
 
-    #mobileShameik{
+    #mobileShameik {
         background-image: url("img/shameikImage.png");
     }
-    #mobileMiles{
+
+    #mobileMiles {
         background-image: url("img/milesImage.png");
     }
 
-    #mobileHaliee{
+    #mobileHaliee {
         background-image: url("img/haileeImage.png");
     }
 
-    #mobileGwen{
+    #mobileGwen {
         background-image: url("img/gwenImage.png");
     }
 
-    #mobileBrian{
+    #mobileBrian {
         background-image: url("img/brianImage.png");
     }
 
-    #mobileJeff{
+    #mobileJeff {
         background-image: url("img/jeffersonImage.png");
     }
 
-    #mobileLauren{
+    #mobileLauren {
         background-image: url("img/laurenImage.png");
     }
 
-    #mobileRio{
+    #mobileRio {
         background-image: url("img/rio.png");
     }
 
-    #mobileJake{
+    #mobileJake {
         background-image: url("img/jakeImage.png");
     }
 
-    #mobilePeter{
+    #mobilePeter {
         background-image: url("img/peterImage.png");
     }
 
-    #mobileJason{
+    #mobileJason {
         background-image: url("img/jasonImage.png");
     }
 
-    #mobileSpot{
+    #mobileSpot {
         background-image: url("img/spotImage.png");
     }
 
-    #mobileIssa{
+    #mobileIssa {
         background-image: url("img/issaImage.png");
     }
 
-    #mobileJess{
+    #mobileJess {
         background-image: url("img/spiderWomanimage.webp");
     }
 
-    #mobileKaran{
+    #mobileKaran {
         background-image: url("img/karanImage.png");
     }
 
-    #mobilePavitr{
+    #mobilePavitr {
         background-image: url("img/indiaImage.png");
     }
 
-    #mobileDaniel{
+    #mobileDaniel {
         background-image: url("img/danielImage.png");
     }
 
-    #mobileHobie{
+    #mobileHobie {
         background-image: url("img/spiderPunkImage.png");
     }
 
-    #mobileOscar{
+    #mobileOscar {
         background-image: url("img/oscarImage.png");
     }
 
-    #mobileMiguel{
+    #mobileMiguel {
         background-image: url("img/miguelImage.png");
     }
 
-    .mobileImage{
+    .mobileImage {
         width: 100%;
         height: 200px;
         margin: auto;
@@ -1149,24 +1155,25 @@ li img {
     .imageWrapper {
         height: 300px;
     }
-    
-    
+
+
     .pText {
         height: 300px;
         visibility: visible;
     }
-    
+
     #developmentImage {
         height: 300px;
     }
-    
+
     #developmentImage2 {
         height: 300px;
     }
-    
+
     #developmentImage3 {
         height: 300px;
     }
+
     .pProductionT {
         font-size: .75rem;
         visibility: visible;
@@ -1196,23 +1203,24 @@ li img {
     .imageWrapper {
         height: 200px;
     }
-    
+
     .pText {
         height: 200px;
         visibility: visible;
     }
-    
+
     #developmentImage {
         height: 200px;
     }
-    
+
     #developmentImage2 {
         height: 200px;
     }
-    
+
     #developmentImage3 {
         height: 200px;
     }
+
     .pProductionT {
         font-size: .5rem;
         visibility: visible;
@@ -1237,7 +1245,7 @@ li img {
         width: 80%;
         margin: auto;
     }
-    
+
 }
 
 /****************************************** ANIMATION PAGE ******************************************/
@@ -1253,9 +1261,8 @@ li img {
     text-align: left;
     margin: 2% auto;
     width: 85%;
-    padding: 20px;
-    padding-right: 120px;
     z-index: 1;
+    margin-right: 13%;
 }
 
 .pAnimationBox2 {
@@ -1265,7 +1272,7 @@ li img {
     text-align: left;
     margin: 2% auto;
     width: 85%;
-    padding-left: 5%;
+    margin-left: 13%;
 }
 
 #animationFlex {
@@ -1344,7 +1351,7 @@ li img {
     background-image: url("img/gwenAnimationImage.png");
     width: 25%;
     height: 400px;
-    margin-left: -5%;
+    margin-left: -2%;
     margin-top: 20%;
 }
 
@@ -1368,25 +1375,17 @@ li img {
     background-image: url("img/spiderPunkAnimation1.png");
     width: 50%;
     height: 600px;
-    margin-left: 67%;
+    margin-left: 70%;
     margin-top: 2%;
     rotate: 10deg;
-}
-
-#spiderPunkAnimationImage2 {
-    background-image: url("img/spiderPunkAnimation2.png");
-    width: 30%;
-    height: 500px;
-    margin-left: 66%;
-    margin-top: 40%;
 }
 
 #legoAnimationImage {
     background-image: url("img/legoAnimation.png");
     width: 20%;
     height: 400px;
-    margin-left: -2%;
-    margin-top: 18%;
+    margin-left: 1%;
+    margin-top: 17%;
 }
 
 #animationMilesFinalImage {
@@ -1394,7 +1393,7 @@ li img {
     width: 40%;
     height: 600px;
     margin-left: 65%;
-    margin-top: 11%;
+    margin-top: 2%;
 }
 
 
@@ -1517,11 +1516,6 @@ li img {
     width: 100%;
 }
 
-#spiderPunkAnimationBox2 {
-    background-color: #AB3BAA;
-    width: 100%;
-}
-
 #animationEdgeyImage {
     background-image: url("img/edgeyAnimation.jpg");
     width: 100%;
@@ -1573,6 +1567,7 @@ li img {
     background-attachment: fixed;
 }
 
+
 @media screen and (max-width: 900px) {
     .pAnimationBox1 {
         font-family: "Montserrat", sans-serif;
@@ -1582,16 +1577,18 @@ li img {
         margin: 2% auto;
         width: 85%;
         padding-right: 95px;
+        margin-right: 15%;
     }
-    
+
     .pAnimationBox2 {
         font-family: "Montserrat", sans-serif;
         color: #D3D3D3;
         font-size: .85rem;
         text-align: left;
         margin: 2% auto;
-        width: 90%;
-        padding-left: 30px;
+        width: 85%;
+        padding-left: 10px;
+        margin-left: 10%;
     }
 
     .animationGwenBodyImage {
@@ -1609,7 +1606,7 @@ li img {
         width: 100%;
         height: 200px;
     }
-    
+
     #animationLibrarian {
         background-image: url("img/animationLibrarian.jpg");
         width: 100%;
@@ -1625,13 +1622,13 @@ li img {
         width: 100%;
         height: 100px;
     }
-    
+
     #animationSydMeadImage {
         background-image: url("img/sydMead.jpg");
         width: 100%;
         height: 100px;
     }
-    
+
     #animationFinalImage {
         background-image: url("img/animationFinalImage.jpg");
         width: 100%;
@@ -1650,34 +1647,7 @@ li img {
         width: 90%;
         padding-right: 10px;
     }
-    #spiderPunkAnimationImage2 {
-        background-image: url("img/spiderPunkAnimation2.png");
-        width: 30%;
-        height: 500px;
-        margin-left: 55%;
-        margin-top: 45%;
-    }
-    
-}
 
-@media screen and (max-width: 700px) {
-    #spiderPunkAnimationImage2 {
-        background-image: url("img/spiderPunkAnimation2.png");
-        width: 30%;
-        height: 500px;
-        margin-left: 55%;
-        margin-top: 57%;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    #spiderPunkAnimationImage2 {
-        background-image: url("img/spiderPunkAnimation2.png");
-        width: 30%;
-        height: 500px;
-        margin-left: 50%;
-        margin-top: 75%;
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1689,16 +1659,18 @@ li img {
         margin: 2% auto;
         width: 85%;
         padding-right: 95px;
+        margin-right: 15%;
     }
-    
+
     .pAnimationBox2 {
         font-family: "Montserrat", sans-serif;
         color: #D3D3D3;
         font-size: .5rem;
         text-align: left;
         margin: 2% auto;
-        width: 90%;
+        width: 85%;
         padding-left: 30px;
+        margin-left: 5%;
     }
 
     .animationGwenBodyImage {
@@ -1716,13 +1688,13 @@ li img {
         width: 100%;
         height: 200px;
     }
-    
+
     #animationLibrarian {
         background-image: url("img/animationLibrarian.jpg");
         width: 100%;
         height: 200px;
     }
-    
+
     #animationFinalImage {
         background-image: url("img/animationFinalImage.jpg");
         width: 100%;
@@ -1740,13 +1712,7 @@ li img {
         width: 90%;
         padding-right: 10px;
     }
-    #spiderPunkAnimationImage2 {
-        background-image: url("img/spiderPunkAnimation2.png");
-        width: 30%;
-        height: 500px;
-        margin-left: 50%;
-        margin-top: 45%;
-    }
+
     #legoAnimationImage {
         background-image: url("img/legoAnimation.png");
         width: 20%;
@@ -1754,14 +1720,39 @@ li img {
         margin-left: -2%;
         margin-top: 18%;
     }
-    
-}
-@media screen and (max-width: 450px) {
-    #spiderPunkAnimationImage2 {
-        background-image: url("img/spiderPunkAnimation2.png");
-        width: 30%;
-        height: 500px;
-        margin-left: 50%;
-        margin-top: 58%;
+
+    #milesAnimationImage {
+        background-image: url("img/milesAnimationImage.png");
+        width: 40%;
+        height: 600px;
+        margin-left: 60%;
+        margin-top: 20%;
     }
+    
+    #pavitrAnimationImage {
+        background-image: url("img/pavitrAnimationImage.png");
+        width: 60%;
+        height: 600px;
+        margin-left: 52%;
+        margin-top: 15%;
+    }
+
+    #spiderPunkAnimationImage1 {
+        background-image: url("img/spiderPunkAnimation1.png");
+        width: 50%;
+        height: 600px;
+        margin-left: 63%;
+        margin-top: 2%;
+        rotate: 10deg;
+    }
+
+    #animationMilesFinalImage {
+        background-image: url("img/finalImage.png");
+        width: 40%;
+        height: 600px;
+        margin-left: 60%;
+        margin-top: 11%;
+    }
+    
+
 }
