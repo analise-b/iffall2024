@@ -788,7 +788,7 @@ li img {
 }
 
 #spiderWomanFlip:hover {
-    background-image: url("img/spiderwomanImage.png");
+    background-image: url("img/spiderWomanimage.webp");
 }
 
 #pavitrFlip {
@@ -941,7 +941,7 @@ li img {
     }
 
     #mobileJess{
-        background-image: url("img/spiderwomanImage.png");
+        background-image: url("img/spiderWomanimage.webp");
     }
 
     #mobileKaran{
