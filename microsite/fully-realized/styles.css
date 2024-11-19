@@ -1,7 +1,7 @@
 /****************************************** GENERAL ******************************************/
 html {
     min-height: 100%;
-    cursor: url(img/cobweb.png), auto;
+    cursor: url(img/cobweb.png) 20 20, auto;
 }
 
 body {
@@ -87,6 +87,7 @@ header h1:hover {
 a {
     text-decoration: none;
     color: #D3D3D3;
+    cursor: url(img/cobweb.png) 20 20, auto;
 }
 
 #homeSelected a:visited {
@@ -134,6 +135,11 @@ footer h1 {
     letter-spacing: 2px;
     font-size: 1rem;
     margin-top: 68%;
+}
+
+footer p:hover,
+footer h1:hover {
+    color: #000000;
 }
 
 #footerFlex {
