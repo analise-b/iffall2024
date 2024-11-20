@@ -24,6 +24,10 @@ body {
     width: 60%;
 }
 
+#pHomeLast{
+    margin-bottom: 5%;
+}
+
 header {
     background-image: linear-gradient(to right, #44000C, #23050F, #081640);
     width: 100%;
@@ -91,7 +95,7 @@ a {
 }
 
 #homeSelected a:visited {
-    color: #F701BB;
+    color: #F80032;
 }
 
 #plotSelected a:visited {
@@ -281,7 +285,7 @@ footer h1:hover {
 }
 
 #homeTitle {
-    color: #F701BB;
+    color: #F80032;
     letter-spacing: 2px;
 }
 
@@ -456,6 +460,10 @@ footer h1:hover {
     color: #F1BB2B;
     margin-bottom: 0;
     letter-spacing: 2px;
+}
+
+#plotEnd {
+    margin-bottom: 5%;
 }
 
 .plotFlex {
@@ -669,6 +677,10 @@ footer h1:hover {
     margin-bottom: 0;
     letter-spacing: 2px;
     padding-bottom: 2%;
+}
+
+#castEnd {
+    margin-bottom: 5%;
 }
 
 .castFlex {
@@ -1132,6 +1144,10 @@ li img {
     margin: auto;
 }
 
+#lastSpotifyEmbed {
+    margin-bottom: 5%;
+}
+
 @media screen and (max-width: 1200px) {
     .pProductionT {
         font-size: 1rem;
@@ -1570,7 +1586,7 @@ li img {
 #animationFinalImage {
     background-image: url("img/animationFinalImage.jpg");
     width: 100%;
-    background-attachment: fixed;
+    background-position: 50% 20%;
 }
 
 
