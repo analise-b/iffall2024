@@ -164,6 +164,40 @@ footer h1 {
     margin: 0;
 }
 
+#leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 2%;
+    padding: 0;
+}
+
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+}
+
+.pSource {
+    color: #D3D3D3;
+    font-family: "Sedgwick Ave Display", cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: .75rem;
+    margin: 0;
+}
+
+#sourceDiv {
+    display: none;
+}
+
+#pSource:hover {
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 1400px) {
 
     header h1 {
@@ -205,7 +239,8 @@ footer h1 {
         font-size: 1rem;
     }
 
-    footer p {
+    footer p,
+    .pSource {
         padding-left: 0;
     }
 
@@ -224,6 +259,27 @@ footer h1 {
 
     footer {
         height: 100px;
+    }
+
+    #leftSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    #sourceDiv {
+        display: block;
+    }
+
+    #sourceDiv2 {
+        display: none;
+    }
+
+    #leftSide {
+        display: none;
     }
 }
 
@@ -245,7 +301,8 @@ footer h1 {
         font-size: .5rem;
     }
 
-    footer p {
+    footer p,
+    .pSource {
         font-size: .5rem;
     }
 
@@ -1781,7 +1838,7 @@ li img {
 
     #milesAnimationImage {
         background-image: url("img/milesAnimationImage.png");
-        width: 40%;
+        width: 37%;
         height: 600px;
         margin-left: 60%;
         margin-top: 20%;
