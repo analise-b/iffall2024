@@ -30,9 +30,6 @@ header {
     border-bottom: 5px solid #000000;
     text-decoration: none;
     letter-spacing: 2px;
-    /*position: fixed;*/
-    top: 0;
-    z-index: 2;
 }
 
 .headerImage {
@@ -283,17 +280,6 @@ footer h1 {
     }
 }
 
-@media (max-width: 768px) {
-
-    /* Adjusts for smaller screens */
-    body {
-        background-attachment: scroll;
-        /* Fix mobile scrolling issues */
-        background-size: auto 100%;
-        /* Adjusts gradient scaling */
-    }
-}
-
 @media screen and (max-width: 500px) {
 
     footer h1,
@@ -302,11 +288,14 @@ footer h1 {
     }
 
     footer p,
-    .pSource {
+    .pSource,
+    footer p:hover,
+    .pSource:hover {
         font-size: .5rem;
     }
 
-    header h1:hover {
+    header h1:hover,
+    footer h1:hover {
         font-size: .5rem;
     }
 
@@ -343,7 +332,6 @@ footer h1 {
 
 #mainImage {
     background-image: url("img/mainImage.jpg");
-    /* margin-top: 15%;*/
 }
 
 .pageTitle {
@@ -952,6 +940,12 @@ li img {
 
 }
 
+@media screen and (max-width: 730px){
+    .name {
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .castFlex {
         display: flex;
@@ -961,6 +955,10 @@ li img {
         width: 80%;
         margin: 0;
         align-items: flex-end;
+    }
+
+    .name {
+        height: 80px;
     }
 
     .doubleImages {
