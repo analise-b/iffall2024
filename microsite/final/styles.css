@@ -1180,10 +1180,6 @@ li img {
     margin: 5% auto;
 }
 
-.imageWrapper:hover .pProduction {
-    visibility: visible;
-}
-
 .imageWrapper:hover .pText {
     visibility: visible;
 }
