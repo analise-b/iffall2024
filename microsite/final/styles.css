@@ -1,0 +1,1816 @@
+/****************************************** GENERAL ******************************************/
+html {
+    min-height: 100%;
+    cursor: url(img/cobweb.png) 20 20, auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: linear-gradient(to bottom, #001C4C, #000000);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header {
+    background-image: linear-gradient(to right, #44000C, #23050F, #081640);
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #D3D3D3;
+    font-family: "Sedgwick Ave Display", cursive;
+    border-bottom: 5px solid #000000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /*position: fixed;*/
+    top: 0;
+    z-index: 2;
+}
+
+.headerImage {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
+.homeLink {
+    display: flex;
+    width: 25%;
+    height: 90px;
+}
+
+#homeImage {
+    background-image: url("img/homeHeader.webp");
+}
+
+#plotImage {
+    background-image: url("img/plotImage.avif");
+}
+
+#castImage {
+    background-image: url("img/castImage.jpg");
+}
+
+#productionImage {
+    background-image: url("img/productionImage.avif");
+}
+
+#animationImage {
+    background-image: url("img/animationImage.avif");
+}
+
+header h1:hover {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #D3D3D3;
+    cursor: url(img/cobweb.png) 20 20, auto;
+}
+
+#homeSelected a:visited {
+    color: #F80032;
+}
+
+#plotSelected a:visited {
+    color: #F1BB2B;
+}
+
+#castSelected a:visited {
+    color: #85000A;
+}
+
+#productionSelected a:visited {
+    color: #0074E9;
+}
+
+#animationSelected a:visited {
+    color: #E40AFA;
+}
+
+footer {
+    position: absolute;
+    background-image: linear-gradient(to right, #44000C, #23050F, #081640);
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    border-top: 5px solid #000000;
+}
+
+footer p {
+    color: #D3D3D3;
+    font-family: "Sedgwick Ave Display", cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+}
+
+footer h1:hover,
+footer p:hover {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0;
+}
+
+footer h1 {
+    color: #D3D3D3;
+    font-family: "Sedgwick Ave Display", cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2;
+    height: 100%;
+    align-items: center;
+}
+
+
+#footerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#footerList p {
+    margin: 0;
+    width: 60%;
+}
+
+#footerList h1 {
+    margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h1:hover {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        height: 100px;
+    }
+
+    .headerImage {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 10px;
+    }
+
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header h1:hover {
+        font-size: 1rem;
+    }
+
+    footer p {
+        padding-left: 0;
+    }
+
+    footer h1 {
+        display: none;
+    }
+
+    #footerList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 2% auto;
+        line-height: 2;
+    }
+
+    footer {
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Adjusts for smaller screens */
+    body {
+        background-attachment: scroll;
+        /* Fix mobile scrolling issues */
+        background-size: auto 100%;
+        /* Adjusts gradient scaling */
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    footer h1,
+    header h1 {
+        font-size: .5rem;
+    }
+
+    footer p {
+        font-size: .5rem;
+    }
+
+    header h1:hover {
+        font-size: .5rem;
+    }
+    footer {
+        height: 100px;
+    }
+
+}
+
+/****************************************** HOME PAGE ******************************************/
+
+.pHome {
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2% auto;
+    width: 60%;
+}
+
+#pHomeLast{
+    margin-bottom: 5%;
+}
+
+.largeImage {
+    width: 80%;
+    height: 400px;
+    margin: 8% auto;
+    padding: 0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+#mainImage {
+    background-image: url("img/mainImage.jpg");
+    /* margin-top: 15%;*/
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Sedgwick Ave Display", cursive;
+}
+
+#homeTitle {
+    color: #F80032;
+    letter-spacing: 2px;
+}
+
+#posterImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.posterImagesGeneral {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 400px;
+    margin: 8% 0;
+    padding: 0;
+}
+
+#posterImage1 {
+    background-image: url("img/posterImage1.jpg");
+}
+
+#posterImage2 {
+    background-image: url("img/posterImage2.webp");
+}
+
+#posterImage3 {
+    background-image: url("img/posterImage3.jpeg");
+}
+
+#posterImage4 {
+    background-image: url("img/posterImage4.jpg");
+}
+
+#upsideImage {
+    background-image: url("img/upsideImage.jpg");
+    background-attachment: fixed;
+}
+
+#beyondVerseImage {
+    background-image: url("img/beyondVerseImage.jpg");
+    width: 80%;
+    height: 550px;
+    background-position: 50% 0%;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .largeImage {
+        width: 80%;
+        height: 400px;
+        margin: 8% auto;
+        padding: 0;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+
+    .pHome {
+        font-size: 1.5rem;
+    }
+
+    .pageTitle {
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Sedgwick Ave Display", cursive;
+    }
+
+    #beyondVerseImage {
+        background-image: url("img/beyondVerseImage.jpg");
+        width: 80%;
+        height: 400px;
+        background-position: 50% 0%;
+    }
+
+    #posterImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #posterImage4 {
+        display: none;
+    }
+
+    .posterImagesGeneral {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 45%;
+        height: 300px;
+        margin: 5% 2%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #upsideImage {
+        background-image: url("img/upsideImage.jpg");
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .largeImage {
+        width: 80%;
+        height: 150px;
+        margin: 8% auto;
+        padding: 0;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+
+    .pHome {
+        font-size: .75rem;
+    }
+
+    .pageTitle {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Sedgwick Ave Display", cursive;
+    }
+
+    #beyondVerseImage {
+        background-image: url("img/beyondVerseImage.jpg");
+        width: 80%;
+        height: 200px;
+        background-position: 50% 0%;
+    }
+
+    #posterImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #posterImage4 {
+        display: none;
+    }
+
+    .posterImagesGeneral {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 45%;
+        height: 150px;
+        margin: 5% 2%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #upsideImage {
+        background-image: url("img/upsideImage.jpg");
+        background-attachment: local;
+    }
+}
+
+/****************************************** PLOT PAGE ******************************************/
+#plotTitle,
+#plotEnd {
+    color: #F1BB2B;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+#plotEnd {
+    margin-bottom: 5%;
+}
+
+.plotFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.plotBodyImage {
+    width: 50%;
+    height: 450px;
+    background-size: contain;
+    border-radius: 10px;
+    background-attachment: fixed;
+    margin: 5% auto;
+}
+
+#gwenGeorgeImage {
+    background-image: url("img/gwenGeorge.webp");
+    background-position: 230% 80%;
+}
+
+.pPlot {
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 5% auto;
+    width: 40%;
+}
+
+#spotMilesImage {
+    background-image: url("img/spotMiles.jpg");
+    background-position: -100% 50%;
+}
+
+#mumbattanImage {
+    background-image: url("img/mumbattanImage.jpg");
+    background-position: 150% 0%;
+}
+
+#nuevaYorkImage {
+    background-image: url("img/nuevaYork.jpg");
+    background-position: 10% 50%;
+}
+
+#miguelMilesImage {
+    background-image: url("img/miguelMilesImage.jpg");
+    background-position: 150% 50%;
+}
+
+#endSceneImage {
+    background-image: url("img/endSceneImage.png");
+    background-position: 40% 50%;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #plotTitle,
+    #plotEnd {
+        color: #F1BB2B;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 3rem;
+    }
+
+    .plotFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+    }
+
+    #flipReverse,
+    #flipReverse2,
+    #flipReverse3 {
+        flex-direction: column-reverse;
+    }
+
+    .plotBodyImage {
+        width: 80%;
+        height: 450px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-attachment: local;
+        margin: 5% auto;
+    }
+
+    #gwenGeorgeImage {
+        background-image: url("img/gwenGeorge.webp");
+        background-position: center;
+    }
+
+    .pPlot {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: 1.5rem;
+        text-align: left;
+        margin: 5% auto;
+        width: 80%;
+    }
+
+    #spotMilesImage {
+        background-image: url("img/spotMiles.jpg");
+        background-position: center;
+    }
+
+    #mumbattanImage {
+        background-image: url("img/mumbattanImage.jpg");
+        background-position: center;
+    }
+
+    #nuevaYorkImage {
+        background-image: url("img/nuevaYork.jpg");
+        background-position: center;
+    }
+
+    #miguelMilesImage {
+        background-image: url("img/miguelMilesImage.jpg");
+        background-position: center;
+    }
+
+    #endSceneImage {
+        background-image: url("img/endSceneImage.png");
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #plotTitle,
+    #plotEnd {
+        color: #F1BB2B;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    .plotFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+    }
+
+    #flipReverse,
+    #flipReverse2,
+    #flipReverse3 {
+        flex-direction: column-reverse;
+    }
+
+    .plotBodyImage {
+        width: 80%;
+        height: 200px;
+        background-size: cover;
+        border-radius: 10px;
+        background-attachment: local;
+        background-repeat: no-repeat;
+        margin: 5% auto;
+    }
+
+    #gwenGeorgeImage {
+        background-image: url("img/gwenGeorge.webp");
+        background-position: center;
+    }
+
+    .pPlot {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: .75rem;
+        text-align: left;
+        margin: 5% auto;
+        width: 80%;
+    }
+
+    #spotMilesImage {
+        background-image: url("img/spotMiles.jpg");
+        background-position: center;
+    }
+
+    #mumbattanImage {
+        background-image: url("img/mumbattanImage.jpg");
+        background-position: center;
+    }
+
+    #nuevaYorkImage {
+        background-image: url("img/nuevaYork.jpg");
+        background-position: center;
+    }
+
+    #miguelMilesImage {
+        background-image: url("img/miguelMilesImage.jpg");
+        background-position: center;
+    }
+
+    #endSceneImage {
+        background-image: url("img/endSceneImage.png");
+        background-position: center;
+    }
+}
+
+/****************************************** CAST PAGE ******************************************/
+#castTitle,
+#castEnd {
+    color: #85000A;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+}
+
+#castEnd {
+    margin-bottom: 5%;
+}
+
+.castFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    align-items: flex-end;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #D3D3D3;
+    margin: 5% 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+li img {
+    width: 50%;
+    margin: 5% 2%;
+    height: auto;
+    object-fit: cover;
+}
+
+.doubleImages {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+
+.characterName {
+    font-family: "Sedgwick Ave Display", cursive;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 5%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background: radial-gradient(circle, black 20%, transparent 21%) 0 0 / 10px 10px,
+        radial-gradient(circle, black 20%, transparent 21%) 5px 5px / 10px 10px;
+    background-color: #85000A;
+    width: 50%;
+    height: 125px;
+    z-index: 1;
+    justify-content: center;
+}
+
+.fullName {
+    margin-top: 5%;
+    line-height: 150%;
+    font-weight: bold;
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.flip {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    align-items: center;
+}
+
+#milesFlip {
+    background-image: url("img/shameikImage.png");
+}
+
+#milesFlip:hover {
+    background-image: url("img/milesImage.png");
+
+}
+
+#gwenFlip {
+    background-image: url("img/haileeImage.png");
+}
+
+#gwenFlip:hover {
+    background-image: url("img/gwenImage.png");
+    background-position: 40% 80%;
+}
+
+#jeffFlip {
+    background-image: url("img/brianImage.png");
+}
+
+#jeffFlip:hover {
+    background-image: url("img/jeffersonImage.png");
+}
+
+#rioFlip {
+    background-image: url("img/laurenImage.png");
+}
+
+#rioFlip:hover {
+    background-image: url("img/rio.png");
+}
+
+#peterFlip {
+    background-image: url("img/jakeImage.png");
+}
+
+#peterFlip:hover {
+    background-image: url("img/peterImage.png");
+}
+
+#spotFlip {
+    background-image: url("img/jasonImage.png");
+}
+
+#spotFlip:hover {
+    background-image: url("img/spotImage.png");
+}
+
+#spiderWomanFlip {
+    background-image: url("img/issaImage.png");
+}
+
+#spiderWomanFlip:hover {
+    background-image: url("img/spiderWomanimage.png");
+}
+
+#pavitrFlip {
+    background-image: url("img/karanImage.png");
+}
+
+#pavitrFlip:hover {
+    background-image: url("img/indiaImage.png");
+}
+
+#hobieFlip {
+    background-image: url("img/danielImage.png");
+}
+
+#hobieFlip:hover {
+    background-image: url("img/spiderPunkImage.png");
+}
+
+#miguelFlip {
+    background-image: url("img/oscarImage.png");
+}
+
+#miguelFlip:hover {
+    background-image: url("img/miguelImage.png");
+}
+
+@media screen and (max-width: 1200px) {
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        text-align: center;
+        font-size: .8rem;
+        color: #D3D3D3;
+        margin: auto;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .name {
+        height: 80px;
+    }
+
+    #spotName {
+        height: 93px;
+    }
+
+    .fullName {
+        margin-top: 7%;
+    }
+
+    #pSpotName {
+        margin-top: 5%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .castFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0;
+        align-items: flex-end;
+    }
+
+    .doubleImages {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-size: .8rem;
+        color: #D3D3D3;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        padding-bottom: 10%;
+    }
+
+    li img {
+        width: 50%;
+        margin: 0;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #pavitrFlip:active {
+        background-image: url("img/indiaImage.png");
+    }
+
+    #milesFlip,
+    #gwenFlip,
+    #jeffFlip,
+    #rioFlip,
+    #peterFlip,
+    #spotFlip,
+    #spiderWomanFlip,
+    #pavitrFlip,
+    #hobieFlip,
+    #miguelFlip {
+        display: none;
+    }
+
+    #mobileShameik {
+        background-image: url("img/shameikImage.png");
+    }
+
+    #mobileMiles {
+        background-image: url("img/milesImage.png");
+    }
+
+    #mobileHaliee {
+        background-image: url("img/haileeImage.png");
+    }
+
+    #mobileGwen {
+        background-image: url("img/gwenImage.png");
+    }
+
+    #mobileBrian {
+        background-image: url("img/brianImage.png");
+    }
+
+    #mobileJeff {
+        background-image: url("img/jeffersonImage.png");
+    }
+
+    #mobileLauren {
+        background-image: url("img/laurenImage.png");
+    }
+
+    #mobileRio {
+        background-image: url("img/rio.png");
+    }
+
+    #mobileJake {
+        background-image: url("img/jakeImage.png");
+    }
+
+    #mobilePeter {
+        background-image: url("img/peterImage.png");
+    }
+
+    #mobileJason {
+        background-image: url("img/jasonImage.png");
+    }
+
+    #mobileSpot {
+        background-image: url("img/spotImage.png");
+    }
+
+    #mobileIssa {
+        background-image: url("img/issaImage.png");
+    }
+
+    #mobileJess {
+        background-image: url("img/spiderWomanimage.png");
+    }
+
+    #mobileKaran {
+        background-image: url("img/karanImage.png");
+    }
+
+    #mobilePavitr {
+        background-image: url("img/indiaImage.png");
+    }
+
+    #mobileDaniel {
+        background-image: url("img/danielImage.png");
+    }
+
+    #mobileHobie {
+        background-image: url("img/spiderPunkImage.png");
+    }
+
+    #mobileOscar {
+        background-image: url("img/oscarImage.png");
+    }
+
+    #mobileMiguel {
+        background-image: url("img/miguelImage.png");
+    }
+
+    .mobileImage {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        align-items: center;
+    }
+
+    .doubleImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+/****************************************** PRODUCTION PAGE ******************************************/
+#productionTitle,
+#productionTitle2 {
+    color: #0074E9;
+    letter-spacing: 2px;
+}
+
+#productionTitle2 {
+    margin-top: 10%;
+}
+
+#productionFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.productionFlexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.pProductionT {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 5% auto;
+    width: 50%;
+}
+
+.pText {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    visibility: hidden;
+    background-image: linear-gradient(to bottom, rgb(0, 28, 76, 0.75), rgb(0, 0, 0, 0.75));
+    border-radius: 10px;
+    margin: auto;
+}
+
+#wrap3 {
+    margin-top: 5%;
+}
+
+#pText2,
+#pText3 {
+    margin: 5% auto;
+}
+
+.imageWrapper:hover .pProduction {
+    visibility: visible;
+}
+
+.imageWrapper:hover .pText {
+    visibility: visible;
+}
+
+#developmentImage {
+    background-image: url("img/development.jpg");
+    background-size: cover;
+    background-position: 50% 5%;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+#developmentImage2 {
+    background-image: url("img/developmentImage2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 500px;
+    margin: 5% auto;
+}
+
+#developmentImage3 {
+    background-image: url("img/developmentImage3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 500px;
+    margin: 5% auto;
+}
+
+.pProduction {
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 5% auto;
+    width: 50%;
+}
+
+.spotifyEmbed {
+    width: 40%;
+    padding: 2%;
+}
+
+.spotifySongs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+#lastSpotifyEmbed {
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+    .pProductionT {
+        font-size: 1rem;
+    }
+
+    .pProduction {
+        font-size: 1rem;
+    }
+
+    .spotifyEmbed {
+        width: 80%;
+        padding: 2%;
+    }
+
+    .spotifySongs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .imageWrapper {
+        height: 300px;
+    }
+
+
+    .pText {
+        height: 300px;
+        visibility: visible;
+    }
+
+    #developmentImage {
+        height: 300px;
+    }
+
+    #developmentImage2 {
+        height: 300px;
+    }
+
+    #developmentImage3 {
+        height: 300px;
+    }
+
+    .pProductionT {
+        font-size: .75rem;
+        visibility: visible;
+    }
+
+    .pProduction {
+        font-size: .75rem;
+        visibility: visible;
+    }
+
+    .spotifyEmbed {
+        width: 80%;
+        padding: 2%;
+    }
+
+    .spotifySongs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imageWrapper {
+        height: 200px;
+    }
+
+    .pText {
+        height: 200px;
+        visibility: visible;
+    }
+
+    #developmentImage {
+        height: 200px;
+    }
+
+    #developmentImage2 {
+        height: 200px;
+    }
+
+    #developmentImage3 {
+        height: 200px;
+    }
+
+    .pProductionT {
+        font-size: .5rem;
+        visibility: visible;
+    }
+
+    .pProduction {
+        font-size: .75rem;
+        width: 80%;
+        visibility: visible;
+    }
+
+    .spotifyEmbed {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .spotifySongs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+/****************************************** ANIMATION PAGE ******************************************/
+#animationTitle {
+    color: #E40AFA;
+    letter-spacing: 2px;
+}
+
+.pAnimationBox1 {
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2% auto;
+    width: 85%;
+    z-index: 1;
+    margin-right: 13%;
+}
+
+.pAnimationBox2 {
+    font-family: "Montserrat", sans-serif;
+    color: #D3D3D3;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2% auto;
+    width: 85%;
+    margin-left: 13%;
+}
+
+#animationFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.animationBoxFlex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: auto;
+}
+
+.animationBox {
+    width: 80%;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 10px;
+    border-style: 5px solid #000000;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.animationBox2 {
+    width: 80%;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 10px;
+    border-style: 5px solid #000000;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12% 100%);
+    position: relative;
+    z-index: 1;
+    padding-right: 10px;
+    height: auto;
+}
+
+#milesAnimationBox {
+    background-color: #EB6240;
+}
+
+#gwenAnimationBox {
+    background-color: #2BB3AD;
+}
+
+.animationCharacterImages {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: auto;
+    margin: 5% auto;
+    position: absolute;
+    z-index: 2;
+}
+
+#milesAnimationImage {
+    background-image: url("img/milesAnimationImage.png");
+    width: 40%;
+    height: 600px;
+    margin-left: 65%;
+    margin-top: 20%;
+}
+
+#gwenAnimationImage {
+    background-image: url("img/gwenAnimationImage.png");
+    width: 25%;
+    height: 400px;
+    margin-left: -2%;
+    margin-top: 20%;
+}
+
+#pavitrAnimationImage {
+    background-image: url("img/pavitrAnimationImage.png");
+    width: 60%;
+    height: 600px;
+    margin-left: 57%;
+    margin-top: 15%;
+}
+
+#miguelAnimationImage {
+    background-image: url("img/miguelAnimation.png");
+    width: 40%;
+    height: 400px;
+    margin-left: -13%;
+    margin-top: 20%;
+}
+
+#spiderPunkAnimationImage1 {
+    background-image: url("img/spiderPunkAnimation1.png");
+    width: 50%;
+    height: 600px;
+    margin-left: 70%;
+    margin-top: 2%;
+    rotate: 10deg;
+}
+
+#legoAnimationImage {
+    background-image: url("img/legoAnimation.png");
+    width: 20%;
+    height: 400px;
+    margin-left: 1%;
+    margin-top: 17%;
+}
+
+#animationMilesFinalImage {
+    background-image: url("img/finalImage.png");
+    width: 40%;
+    height: 600px;
+    margin-left: 65%;
+    margin-top: 2%;
+}
+
+
+#animationEarthsImage {
+    background-image: url("img/animationStyles.avif");
+}
+
+.animationBodyImage {
+    width: 43%;
+    height: 600px;
+    background-size: contain;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+}
+
+.gwenAnimationMainImagesFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    gap: 5%;
+}
+
+.animationGwenBodyImage {
+    width: 60%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+}
+
+#animationImpressionistPaintingImage {
+    background-image: url("img/impressionistPaintingImage.jpg");
+    margin: 10% auto;
+}
+
+#animationCinderellaImage {
+    background-image: url("img/cinderellaImage.webp");
+    margin: 10% auto;
+}
+
+#animationSpiderGwenImage {
+    background-image: url("img/spiderGwenImage.jpg");
+    margin: 10% auto;
+}
+
+#animationGwenSittingImage {
+    background-image: url("img/gwenSittingImage.jpg");
+}
+
+#animationGwenEarthImage {
+    background-image: url("img/gwenEarthImage.webp");
+    width: 80%;
+}
+
+#mumbattanAnimationBox {
+    background-color: #D40919;
+    width: 90%;
+    padding-right: 100px;
+}
+
+#animationspidermanIndiaImage {
+    background-image: url("img/spidermanIndia.jpg");
+    width: 30%;
+}
+
+#animationMumbuttanImage {
+    background-image: url("img/mumbuttan.jpg");
+}
+
+#animationSpiderPavitrImage {
+    background-image: url("img/spiderPavitr.avif");
+    width: 100%;
+}
+
+#miguelAnimationBox {
+    background-color: #296E92;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+#animationMarvel2099Image {
+    background-image: url("img/marvel2099.jpg");
+    width: 75%;
+    height: 600px;
+}
+
+#miguelFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+#animationOscarArchImage {
+    background-image: url("img/oscarArch.jpg");
+    width: 100%;
+    height: 250px;
+}
+
+#animationSydMeadImage {
+    background-image: url("img/sydMead.jpg");
+    width: 100%;
+    height: 250px;
+}
+
+#nuevaYorkAnimationImage {
+    background-image: url("img/nuevaYorkAnimation.jpg");
+    width: 100%;
+}
+
+#spiderPunkAnimationBox {
+    background-color: #A6874E;
+    width: 100%;
+}
+
+#animationEdgeyImage {
+    background-image: url("img/edgeyAnimation.jpg");
+    width: 100%;
+}
+
+#animationPunkRockNewspaperImage {
+    background-image: url("img/punkRockNewspaper.jpg");
+    width: 100%;
+}
+
+#animationRockedImage {
+    background-image: url("img/rockedAnimation.jpg");
+    width: 100%;
+}
+
+#animationDeadFingersImage {
+    background-image: url("img/deadFingersAnimation.jpg");
+    width: 100%;
+}
+
+#legoAnimationBox {
+    background-color: #7A041A;
+}
+
+#animationlegoImage2 {
+    background-image: url("img/legoAnimation2.avif");
+    width: 100%;
+}
+
+#lastAnimationBox {
+    background-color: #13042E;
+}
+
+#animationDrew {
+    background-image: url("img/animationDrew.png");
+    width: 100%;
+    height: 600px;
+}
+
+#animationLibrarian {
+    background-image: url("img/animationLibrarian.jpg");
+    width: 100%;
+    height: 600px;
+}
+
+#animationFinalImage {
+    background-image: url("img/animationFinalImage.jpg");
+    width: 100%;
+    background-position: 50% 20%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .pAnimationBox1 {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: .75rem;
+        text-align: left;
+        margin: 2% auto;
+        width: 85%;
+        padding-right: 95px;
+        margin-right: 15%;
+    }
+
+    .pAnimationBox2 {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: .75rem;
+        text-align: left;
+        margin: 2% auto;
+        width: 85%;
+        padding-left: 10px;
+        margin-left: 10%;
+    }
+
+    .animationBox {
+        padding-left: 5%;
+    }
+
+    .animationBox2 {
+        padding-right: 5%;
+    }
+
+    .animationGwenBodyImage {
+        width: 80%;
+        height: 200px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        margin: 5% auto;
+        background-repeat: no-repeat;
+    }
+
+    #animationDrew {
+        background-image: url("img/animationDrew.png");
+        width: 100%;
+        height: 200px;
+    }
+
+    #animationLibrarian {
+        background-image: url("img/animationLibrarian.jpg");
+        width: 100%;
+        height: 200px;
+    }
+
+    #animationMarvel2099Image {
+        display: none;
+    }
+
+    #animationOscarArchImage {
+        background-image: url("img/oscarArch.jpg");
+        width: 100%;
+        height: 100px;
+    }
+
+    #animationSydMeadImage {
+        background-image: url("img/sydMead.jpg");
+        width: 100%;
+        height: 100px;
+    }
+
+    #animationFinalImage {
+        background-image: url("img/animationFinalImage.jpg");
+        width: 100%;
+        background-attachment: local;
+        background-position: 50% 20%;
+    }
+
+    #miguelAnimationBox {
+        background-color: #296E92;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #mumbattanAnimationBox {
+        background-color: #D40919;
+        width: 90%;
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .pAnimationBox1 {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: .5rem;
+        text-align: left;
+        margin: 2% auto;
+        width: 85%;
+        padding-right: 95px;
+        margin-right: 15%;
+    }
+
+    .pAnimationBox2 {
+        font-family: "Montserrat", sans-serif;
+        color: #D3D3D3;
+        font-size: .5rem;
+        text-align: left;
+        margin: 2% auto;
+        width: 85%;
+        padding-left: 30px;
+        margin-left: 5%;
+    }
+
+    .animationGwenBodyImage {
+        width: 80%;
+        height: 100px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        margin: 5% auto;
+        background-repeat: no-repeat;
+    }
+
+    #animationDrew {
+        background-image: url("img/animationDrew.png");
+        width: 100%;
+        height: 200px;
+    }
+
+    #animationLibrarian {
+        background-image: url("img/animationLibrarian.jpg");
+        width: 100%;
+        height: 200px;
+    }
+
+    #animationFinalImage {
+        background-image: url("img/animationFinalImage.jpg");
+        width: 100%;
+        background-attachment: local;
+    }
+
+    #miguelAnimationBox {
+        background-color: #296E92;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #mumbattanAnimationBox {
+        background-color: #D40919;
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    #legoAnimationImage {
+        background-image: url("img/legoAnimation.png");
+        width: 20%;
+        height: 400px;
+        margin-left: -2%;
+        margin-top: 18%;
+    }
+
+    #milesAnimationImage {
+        background-image: url("img/milesAnimationImage.png");
+        width: 40%;
+        height: 600px;
+        margin-left: 60%;
+        margin-top: 20%;
+    }
+    
+    #pavitrAnimationImage {
+        background-image: url("img/pavitrAnimationImage.png");
+        width: 60%;
+        height: 600px;
+        margin-left: 52%;
+        margin-top: 15%;
+    }
+
+    #spiderPunkAnimationImage1 {
+        background-image: url("img/spiderPunkAnimation1.png");
+        width: 50%;
+        height: 600px;
+        margin-left: 63%;
+        margin-top: 2%;
+        rotate: 10deg;
+    }
+
+    #animationMilesFinalImage {
+        background-image: url("img/finalImage.png");
+        width: 40%;
+        height: 600px;
+        margin-left: 60%;
+        margin-top: 11%;
+    }
+    
+
+}
