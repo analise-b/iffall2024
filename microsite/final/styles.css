@@ -599,6 +599,10 @@ footer h1 {
         font-size: 3rem;
     }
 
+    #plotEnd {
+        margin-bottom: 5%;
+    }
+
     .plotFlex {
         display: flex;
         flex-direction: column;
@@ -671,6 +675,10 @@ footer h1 {
         margin-bottom: 0;
         letter-spacing: 2px;
         font-size: 2rem;
+    }
+    
+    #plotEnd {
+        margin-bottom: 5%;
     }
 
     .plotFlex {
