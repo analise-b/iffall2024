@@ -1,0 +1,130 @@
+html,body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FAF9F6;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+#flexDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%
+}
+
+#generalPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    width: 20%;
+    margin: 0;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.content:hover {
+    filter:drop-shadow(0px 0px 5px #333);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#recipeImage{
+    background-image: url("img/recipeImage.png");
+}
+
+#micrositeDevelopperImage {
+    background-image: url("img/spidermanImage.png");
+}
+
+#micrositeDirectionImage {
+    background-image: url("img/solarImage.png");
+}
+
+#email {
+    text-decoration: underline;
+    color:darkblue;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+   #flexDisplay {
+       flex-direction: column;
+       margin-top: 5%;
+   }
+
+    .content {
+        width: 80%;
+        margin-top: 5%;
+        height: 300px;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+
+}
+
+
+
